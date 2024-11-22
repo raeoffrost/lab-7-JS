@@ -56,3 +56,12 @@ input{
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.delegation button {
+    width: 150px;
+}
+.colorChange{
+    background-color: rgb(85, 56, 109);
+}
+.colorChange:hover{
+    background-color: rgb(120, 84, 150);
+}
