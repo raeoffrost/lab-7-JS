@@ -12,12 +12,16 @@
         <div>
             <h1>mouse events</h1>
         </div>
+        <p>On mouse enter: "Hover Start</p>
+        <p>On mouse hover: "Hovering</p>
+        <p>On mouse leave: "No Hover</p>
         <div>
             <button id="me-1">No Hover</button>
         </div>
         <div>
             <h2>event delegation</h2>
         </div>
+        <p>On click color will toggle from blue to purple</p>
         <div class="delegation">
             <button>Click to Change Color 1</button>
             <button>Click to Change Color 2</button>
@@ -29,6 +33,17 @@
     <section>
         <div>
             <h1>keyboard events</h1>
+        </div>
+        <p>Key is displayed on press. 700ms after you let go it will appear as "Last Pressed".</p>
+        <p>Pressing a new key overwrites press history.</p>
+        <div>
+            <label>Enter a key</label>
+            <input id="keyboard" aria-label="Key Press Indicator">
+        </div>
+        <div>
+            <span id="pastkey">No key history</span>
+            <br>
+            <span id="currentkey">Current Key: </span>
         </div>
     </section>
     <section>

@@ -24,3 +24,17 @@ btnGroup.addEventListener("click", (event) =>
     document.getElementById("clickDisplay").innerText = `You clicked: ${event.target.innerText}`;
 }
 });
+
+//Keyboard Events
+const keyboard = document.getElementById("keyboard");
+const historyDisplay = document.getElementById("pastkey");
+const currentDisplay = document.getElementById("currentkey");
+
+keyboard.addEventListener("keydown", (event)=>
+    {currentDisplay.innerText = `Current Key: ${event.key}`;
+    });
+
+keyboard.addEventListener("keyup", (event)=>
+{  setTimeout(() => {
+    historyDisplay.innerText = `Last Pressed: ${event.key}`
+    }, 700);;});
