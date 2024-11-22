@@ -14,20 +14,16 @@ section{
     align-items: center;
     gap: 20px;
     border: 1px solid #fff;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 div{
     padding: 20px;
 }
-h1,h2{
+h1{
     text-decoration: underline;
     text-transform: capitalize;
-}
-h1{
     font-weight: bold;
-}
-h2{
-    font-weight: lighter;
 }
 p{
     margin: 2px;
@@ -61,6 +57,10 @@ input{
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: text;
+}
+.delegation {
+    margin:auto;
+    text-align: center;
 }
 .delegation button {
     width: 150px;
