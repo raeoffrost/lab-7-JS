@@ -19,6 +19,8 @@ function leave(){
 const btnGroup = document.querySelector(".delegation");
 btnGroup.addEventListener("click", (event) =>
 {   if (event.target.tagName === 'BUTTON') {
-    event.target.classList.toggle("colorChange")
+    event.target.classList.toggle("colorChange");
+    console.log(event.target.innerText);
+    document.getElementById("clickDisplay").innerText = `You clicked: ${event.target.innerText}`;
 }
 });
