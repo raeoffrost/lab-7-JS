@@ -15,3 +15,10 @@ function hover(){
 function leave(){
     me1.innerText = "No Hover";
 }
+
+const btnGroup = document.querySelector(".delegation");
+btnGroup.addEventListener("click", (event) =>
+{   if (event.target.tagName === 'BUTTON') {
+    event.target.classList.toggle("colorChange")
+}
+});
