@@ -38,3 +38,14 @@ keyboard.addEventListener("keyup", (event)=>
 {  setTimeout(() => {
     historyDisplay.innerText = `Last Pressed: ${event.key}`
     }, 700);;});
+
+ //Form Events
+ const fname = document.getElementById("fname").value;
+ const lname = document.getElementById("lname").value;
+ const confirm = document.getElementById("confirm");
+ const form = document.querySelector("form");
+ form.addEventListener('submit', (event) => 
+    {  event.preventDefault();
+       confirm.innerText = `Thanks ${fname} ${lname}! Submission received.`;
+       console.log("submitted")
+    });
